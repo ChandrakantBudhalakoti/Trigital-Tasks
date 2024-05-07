@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Demo</title>
+    <script>
+      function evenOdd(array) {
+        let result = {
+          evenNumbers: [],
+          oddNumbers: [],
+        };
+        array.forEach(function (num) {
+          if (num % 2 === 0) {
+            result.evenNumbers.push(num);
+          } else {
+            result.oddNumbers.push(num);
+          }
+        });
+        return result;
+      }
+      let numbers = [3, 2, 7, 13, 14, 10, 6, 5];
+      let nums = evenOdd(numbers);
+      console.log("even nums ", nums.evenNumbers);
+      console.log("odd nums ", nums.oddNumbers);
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: black;
+        padding: 10px;
+        height: 80px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-left: 200px;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      nav ul li a:hover {
+        background-color: #555;
+      }
+      .logo {
+        margin-left: 20px;
+        margin-right: auto;
+      }
+      .logo img {
+        height: 40px;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">
+          <img src="https://via.placeholder.com/150x50" alt="Logo" />
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

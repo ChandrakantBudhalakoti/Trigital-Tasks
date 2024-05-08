@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box1 {
+        background-color: rgb(220, 77, 77);
+        margin: 10px;
+        padding: 30px;
+        border: 5px solid black;
+      }
+      .box2,
+      .box3,
+      .box4 {
+        background-color: rgba(26, 170, 178, 0.73);
+        margin: 10px;
+        padding: 30px;
+        border: 8px solid rgb(25, 8, 105);
+        font-size: 18px;
+      }
+      li {
+        color: rgb(206, 94, 113);
+        font-weight: bold;
+        margin: 8px;
+        padding: 6px;
+      }
+      li:nth-child(odd) {
+        background: yellow;
+      }
+      span{
+        border: 4px solid black;
+        background-color: white;
+        padding: 27px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"><h1>Box Model</h1></div>
+    <div class="box2">
+      Every element on the page has its own box, which can be styled using CSS.
+    </div>
+    <div class="box3">From the inside out:</div>
+    <ul>
+      <li>Content</li>
+      <li>Padding</li>
+      <li>Border</li>
+      <li>Margin</li>
+    </ul>
+    <h1>Background</h1>
+    <div class="box4">
+      Keep in mind that a <span>background</span> will cover the content and the
+      padding.
+    </div>
+  </body>
+</html>

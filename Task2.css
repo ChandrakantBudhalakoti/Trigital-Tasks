@@ -296,3 +296,115 @@ footer {
   font-size: 12px;
   color: white;
 }
+
+/* media queries for responsiveness  */
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .header p {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .header button {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .products {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-photo {
+    margin-bottom: 20px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .slide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-content {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .email-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  .foorter-about,
+  .quick-links,
+  .contact-us {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+nav button.toggle-btn {
+  display: none;
+}
+
+nav ul.show {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  nav button.toggle-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}

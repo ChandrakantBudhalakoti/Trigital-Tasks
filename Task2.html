@@ -13,6 +13,7 @@
   <body>
     <nav>
       <ul>
+      <button class="toggle-btn" onclick="toggleNav()">&#9776;</button>
         <img src="https://via.placeholder.com/150x50" alt="Logo" />
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Pricing</a></li>
@@ -181,6 +182,10 @@
           slides[i].style.display = "none";
         }
         slides[slideIndex - 1].style.display = "block";
+      }
+      function toggleNav() {
+        var navUl = document.querySelector("nav ul");
+        navUl.classList.toggle("show");
       }
     </script>
   </body>
